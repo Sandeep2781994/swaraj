@@ -79,9 +79,26 @@ header{
     text-align: center;
 }
 
-.header-content h2{
-    font-size: 4vmin;
+.animation{
+    width: 40%;
+    top: 40%;
+    position: absolute;
+    left: 30%;
+    animation: animate 2s linear forwards;
 }
+
+@keyframes animate {
+    0% {
+      font-size: 0;
+    }
+    100% {
+      font-size: 4vmin;
+    }
+  }
+
+/* .header-content h2{
+    font-size: 4vmin;
+} */
 
 .line{
     width: 9.375rem;
