@@ -80,10 +80,10 @@ header{
 }
 
 .animation{
-    width: 40%;
+    /* width: 40%;
     top: 40%;
     position: absolute;
-    left: 30%;
+    left: 30%; */
     animation: animate 2s linear forwards;
 }
 
