@@ -2,116 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-a{
-    text-decoration: none;
-}
-
-ul{ 
-    list-style: none;
-}
-
-body , html{
+html , body{
     overflow-x: hidden;
-}
-
-/* navbar */
-.navbar{
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 4px;
-    color: whitesmoke;
-    /* background-color: rgba(237, 7, 32, 0.5); */
-    /* background: linear-gradient(120deg, #FFC0CB 50%, #00FFFF 50%); */
-    background: linear-gradient(140deg, #C0C0C0 175px, rgba(9, 163, 9, 0.89) 0, rgba(9, 163, 9, 0.89) 100%);
-}
-
-
-.nav-links{
-    display: flex;
-    align-items: center;
-}
-
-.nav-links li{
-    margin: 0 30px;
-}
-
-.home{
-    text-decoration: underline;
-    color: #006400;
-    font-weight: bolder;
-}
-
-.logo{
-    position: relative;
-    font-family: 'Uncial Antiqua', cursive;
-    letter-spacing: 1px;
-    font-size: 18px;
-    color: #006400;
-    margin-top: 6px;
-    /* text-decoration: underline 3px; */
-}
-
-
-
-/* website page 1 background image */
-header{
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url(img/farmer.jpg);
-    /* background-image: url(/Images/farmer.jpg); */
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.header-content{
-    margin-bottom: 9.375rem;
-    color: whitesmoke;
-    text-align: center;
-}
-
-.animation{
-    /* width: 40%;
-    top: 40%;
-    position: absolute;
-    left: 30%; */
-    animation: animate 2s linear forwards;
-}
-
-@keyframes animate {
-    0% {
-      font-size: 0;
-    }
-    100% {
-      font-size: 4vmin;
-    }
-  }
-
-/* .header-content h2{
-    font-size: 4vmin;
-} */
-
-.line{
-    width: 9.375rem;
-    height: 0.30rem;
-    background-color: #008000;
-    margin: 0.625rem auto;
-    border-radius: 0.313rem;
-}
-
-.header-content h1{
-    font-size: 7vmin;
-    margin-top: 3.125rem;
-    margin-bottom: 1.875rem;
 }
 
 .button{
@@ -120,16 +15,153 @@ header{
     border-radius: 1.875rem;
     color: whitesmoke;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.mobile_menu{
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 40px;
+/* navbar content */
+.first{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Images/mainimage.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    color: #007500;
+}
+
+nav{
+    height: 10vh;
+    /* background: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    transition: all 1s;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #007500;
+}
+
+/* navbar hover */
+nav:hover{
+    background: #007500;
+}
+nav:hover .logo{
+    color: whitesmoke;
+}
+nav:hover ul li a{
+    color: whitesmoke;
+}
+
+.home{
+    background: #007500;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav .menu-btn i{
+    font-size: 25px;
     cursor: pointer;
     display: none;
 }
+
+#click{
+    display: none;
+}
+
+/* first screen content */
+.content{
+    margin-top: 9%;
+    margin-left: 8.5%;
+    color: #007500;
+}
+
+.content h1{
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 600;
+}
+
+.content p{
+    max-width: 40%;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: large;
+    opacity: 0;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    margin-top: 10px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    /* opacity: 0; */
+}
+
+
+.links a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.content-btn{
+    border: 2px solid whitesmoke;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-right: 15px;
+}
+
+
+/* first screen content animation */
+.slide-left{
+    animation: slideleft 1s linear forwards;
+}
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+p.slide-left{
+    animation-delay: 1s;
+}
+
+.links.slide-left{
+    animation-delay: 2s;
+}
+
 
 /* 2nd screen content */
 section{
@@ -166,7 +198,7 @@ h4 {
     margin: 20px auto;
 }
 
-p{
+.col p{
     color: #7c7c7c;
     padding: 0px 40px;
     letter-spacing: 1px;
@@ -181,7 +213,7 @@ p{
     width: 100%;
     height: 100vh;
     /* background-image: url(/Images/education.jpg); */
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url(img/education.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url(Images/education.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -272,38 +304,71 @@ p{
     margin: 20px auto;
 }
 
-/* mobile devices */
-/* navbar and first screen content */
-@media only screen and (max-width:850px){
-    .navbar{
-        padding: 0;
-        background: none;
-    }
-    .logo{
-        position: absolute;
-        top: 30px;
-        left: 30px;
-    }
-    .nav-links{
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        justify-content: center;
-        background: rgba(58, 197, 58, 0.863);
-        margin-top: -900px;
-        transition: all 0.3s ease;
-    }
-    .nav-links li{
-        margin: 30px auto;
-    }
-    .mobile_menuicon{
-        margin-top: 0px;
-        border-bottom-right-radius: 30% ;
-    }
-    .mobile_menu{
-        display: block;
 
+/* responsive mobile media */
+@media only screen and (max-width: 940px) {
+    /* navbar */
+    .navbar{
     }
+    nav ul{
+        position: fixed;
+        top: 65px;
+        left: -100%;
+        background: #007500;
+        height: 90vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: 0.7s ease;
+        border-bottom-right-radius: 250px;
+        /* The z-index property specifies the stack order of an element.
+        An element with greater stack order is always in front of an element with a lower stack order.
+        Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, 
+        or position: sticky) and flex items (elements that are direct children of display:flex elements). */
+        z-index: 999;
+    }
+
+    nav ul li{
+        margin:  50px 0;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        color: whitesmoke;
+    }
+
+    .logo{
+        margin-left: -70px;
+    }
+
+    nav .menu-btn i{
+        display: block;
+    }
+
+    /* menu icon script */
+    #click:checked ~ ul{
+        left: 0%
+    }
+
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+
+    /* fisrt screen paragraph contents */
+    .content{
+        padding: 40px 0;
+    }
+    .content h1{
+        font-size: 10vmin;
+        line-height: 13vmin;
+        font-weight: 800;
+    }
+    .content p{
+        font-size: 5    vmin;
+        padding: 10% 5px;
+        max-width: 90%;
+    }
+
     /* 2nd screen content */
     .row{
         flex-direction: column;
