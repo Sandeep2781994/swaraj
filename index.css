@@ -22,7 +22,7 @@ html , body{
 .first{
     width: 100%;
     height: 100vh;
-    background-image: url(/Images/mainimage.jpg);
+    background-image: url(img/mainimage.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -213,7 +213,7 @@ h4 {
     width: 100%;
     height: 100vh;
     /* background-image: url(/Images/education.jpg); */
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url(Images/education.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url(img/education.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
