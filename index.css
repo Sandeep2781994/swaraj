@@ -18,6 +18,7 @@ html , body{
     text-decoration: none;
 }
 
+
 /* navbar content */
 .first{
     width: 100%;
@@ -61,7 +62,33 @@ nav ul li a{
     color: #007500;
 }
 
+.menubar li{
+    transition: transform 0.3s;
+}
+
+
+/* dropdown list */
+.navbar .menubar ul{
+    position: absolute;
+    flex-direction: column;
+    /* opacity: 0; */
+    display: none;
+}
+
+
+/* dropdown list hover */
+ul :hover .dropdown{
+    /* opacity: 1; */
+    background: #007500;
+    display: block;
+}
+
+
 /* navbar hover */
+.menubar li:hover{
+    transform: scale(1.5)
+}
+
 nav:hover{
     background: #007500;
 }
@@ -305,6 +332,7 @@ h4 {
 }
 
 
+
 /* responsive mobile media */
 @media only screen and (max-width: 940px) {
     /* navbar */
@@ -328,6 +356,33 @@ h4 {
         z-index: 999;
     }
 
+
+    /* dropdown list */
+    .navbar .menubar ul{
+        position: inherit;
+        /* opacity: 0; */
+        /* display: block; */
+        height: 100%;
+    }
+
+    /* dropdown list hover */
+    ul :hover .dropdown{
+        background: none;
+    }
+    
+    /* dropdown list */
+    .navbar .menubar ul li a{
+        color: whitesmoke;
+        /* font-size: small; */
+    }
+
+
+    /* dropdown list */
+    .navbar .menubar ul li{
+        margin: 20px;
+    }
+
+
     nav ul li{
         margin:  50px 0;
     }
@@ -345,6 +400,7 @@ h4 {
         display: block;
     }
 
+  
     /* menu icon script */
     #click:checked ~ ul{
         left: 0%
