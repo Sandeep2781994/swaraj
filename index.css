@@ -9,6 +9,10 @@ html , body{
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .button{
     background-color: #008000;
     padding: 0.625rem 1.25rem;
