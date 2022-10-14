@@ -343,11 +343,11 @@ h4 {
     .navbar{
     }
     nav ul{
-        position: fixed;
+        position: absolute;
         top: 65px;
         left: -100%;
         background: #007500;
-        height: 90vh;
+        height: 91vh;
         width: 100%;
         display: block;
         text-align: center;
@@ -357,7 +357,7 @@ h4 {
         An element with greater stack order is always in front of an element with a lower stack order.
         Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, 
         or position: sticky) and flex items (elements that are direct children of display:flex elements). */
-        z-index: 999;
+        z-index: 9;
     }
 
 
