@@ -344,8 +344,10 @@ h4 {
     }
     nav ul{
         position: absolute;
-        top: 65px;
-        left: -100%;
+        /* top: 65px;
+        left: -100%; */
+        top: -100%;
+        left: -0.5px;
         background: #007500;
         height: 91vh;
         width: 100%;
@@ -360,6 +362,9 @@ h4 {
         z-index: 9;
     }
 
+    .menu-btn{
+        z-index: 10;
+    }
 
     /* dropdown list */
     .navbar .menubar ul{
@@ -407,7 +412,8 @@ h4 {
   
     /* menu icon script */
     #click:checked ~ ul{
-        left: 0%
+        /* left: 0% */
+        top: 0%;
     }
 
     #click:checked ~ .menu-btn i::before{
