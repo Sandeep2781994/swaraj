@@ -79,6 +79,13 @@ nav ul li a{
     display: none;
 }
 
+/* dropdown arrow in drop down list */
+.menubar .down-arrow{
+    font-size: small;
+    position: relative;
+    top: -2px;    
+}
+
 
 /* dropdown list hover */
 ul :hover .dropdown{
