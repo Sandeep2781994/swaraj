@@ -110,15 +110,22 @@ nav:hover ul li a{
     border-radius: 5px;
 }
 
-nav .menu-btn i{
-    font-size: 25px;
-    cursor: pointer;
+/* hamburger Nav Mobile Menu */
+.hamburger{
     display: none;
+    cursor: pointer;
 }
 
-#click{
-    display: none;
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.4s ease;
+    background-color: #000000;
+    border-radius: 10px;
 }
+
 
 /* first screen content */
 .content{
@@ -340,21 +347,20 @@ h4 {
 /* responsive mobile media */
 @media only screen and (max-width: 940px) {
     /* navbar */
-    .navbar{
-    }
-    nav ul{
+
+    .menubar{
         position: absolute;
-        /* top: 65px;
-        left: -100%; */
-        top: -130%;
+        top: -100%;
         left: -0.5px;
         background: #007500;
         height: 100vh;
         width: 100%;
         display: block;
+        flex-direction: column;
         text-align: center;
         transition: 0.7s ease;
         border-bottom-right-radius: 250px;
+        gap: 0;        
         /* The z-index property specifies the stack order of an element.
         An element with greater stack order is always in front of an element with a lower stack order.
         Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, 
@@ -362,9 +368,29 @@ h4 {
         z-index: 9;
     }
 
-    .menu-btn{
+    
+    /* hamburger Nav Mobile Menu */
+    .hamburger{
+        display: block;
         z-index: 10;
     }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menubar.active{
+        top: 0%;
+    }
+
 
     /* dropdown list */
     .navbar .menubar ul{
@@ -405,21 +431,7 @@ h4 {
         margin-left: -70px;
     }
 
-    nav .menu-btn i{
-        display: block;
-    }
-
   
-    /* menu icon script */
-    #click:checked ~ ul{
-        /* left: 0% */
-        top: 0%;
-    }
-
-    #click:checked ~ .menu-btn i::before{
-        content: "\f00d";
-    }
-
     /* fisrt screen paragraph contents */
     .content{
         padding: 40px 0;
