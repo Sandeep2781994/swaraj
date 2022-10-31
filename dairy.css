@@ -42,14 +42,23 @@ html{
     box-shadow: 0px 20px 40px 0px rgb(0 0 0 / 90%);
 }
 
-.glass h1,p{
-    display: flex;
+.glass p{
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     color: #fff;
 }
 
+.glass p::first-letter{
+    font-size: 2.5em;
+    color: #008000;
+    font-weight: bold;
+}
+
 .glass h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #008000;
     font-size: 3em;
     text-decoration: underline;  
