@@ -357,7 +357,7 @@ h4 {
 
     .menubar{
         position: absolute;
-        top: -100%;
+        top: -110%;
         left: -0.5px;
         background: #007500;
         height: 100vh;
