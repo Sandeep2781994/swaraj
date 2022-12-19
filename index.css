@@ -66,6 +66,17 @@ nav ul li a{
     color: #007500;
 }
 
+
+.first .navbar .menubar .dropdown li{
+    width: 80px;
+}
+
+.first .navbar .menubar .dropdown a{
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
 .menubar li{
     transition: transform 0.3s;
 }
@@ -437,6 +448,18 @@ h4 {
     .logo{
         margin-left: -70px;
     }
+
+
+    .first .navbar .menubar .dropdown li{
+        width: 320px;
+    }
+    
+    .first .navbar .menubar .dropdown a{
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+        
 
   
     /* fisrt screen paragraph contents */
