@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.first{
+    width: 100%;
+    height: 60vh;
+}
+
+.navbar{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url(img/agriculture2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 65vh;
+    border-radius: 0 0 10em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 3em;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper h1{
+    font-size: 3.5vw;
+    color: #fff;
+    /* font-weight: 600; */
+}
+
+.logo h1::first-letter{
+    font-size: 4.5vw;
+    color: #008000;
+}
+
+
+.upper ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.upper ul li{
+    padding-left: 2em;
+}
+
+.upper li a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+.dropdown .contact{
+    background: #008000;
+    color: #fff;
+    padding: 0.4em 2.5em;
+    border-radius: 20px;
+}
+
+nav .upper-content{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3.4em;
+}
+
+nav .upper-content h1{
+    font-size: 4vw;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+nav .upper-content h3{
+    font-size: 1.8vw;
+    color: #fff;
+}
+
+nav .upper-content h3::after{
+    content: "";
+    display: block;
+    border: 2px solid #008000;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    margin-top: 1em;
+    width: 35%;
+}
+
+
+/* hamburger Nav Mobile Menu */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.4s ease;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* second page content */
+.second{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: inherit;
+    padding: 5vw 5vw;
+}
+
+.second .second-2nd{
+    display: flex;
+    width: 100%;
+
+}
+
+.div-box{
+    display: flex;
+}
+
+.straight-line{
+    height: 20vh;
+    margin-right: 2vw;
+    padding: 15vh 0;
+}
+
+.straight-line .line{
+    border-left: 3px solid #008000;
+    height: 17vh;
+    margin: 0 1.5vw;
+    margin-left: 0;
+}
+
+.main-heading, .straight-line, .paragraph-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading{
+    width: 75em;
+    height: 30vh;
+    /* margin: 0 3em; */
+}
+
+.main-heading h1{
+    /* padding: 0.8em 0; */
+    font-size: 3vw;
+    padding: auto;
+}
+
+.paragraph-content{
+    width: 200%;
+    height: 30vh;
+    letter-spacing: 1px;
+}
+
+/* third screen */
+.third{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, #fff 20%, #008000 80%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-right-radius: 10em;
+
+}
+
+.third img{
+    width: 40vw;
+    height: 70vh;
+    padding: 0;
+}
+
+
+.third .para-content{
+    width: 50vw;
+    height: 70vh;
+    /* display: grid;
+    align-content: space-between; */
+}
+
+.para-content-title::first-letter{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+}
+
+.para-content-title h1{
+    text-decoration: underline #008000 double;
+}
+
+.para-content-heading p{
+    letter-spacing: 1px;
+    margin-top: 2em;
+    font-weight: 700;
+}
+
+
+/* fourth screen */
+.fourth{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url(img/Uttarakhand-Village-Tourism.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+
+
+.fourth .box1{
+    width: auto;
+    height: auto;
+    padding: 3em;
+}
+
+.box1 li{
+    color: #fff;
+    font-weight: 600;
+    /* text-decoration: none; */
+    line-height: 2em;
+    list-style-position: inside;    
+}
+
+.box1 li::marker{
+    content: '»';
+    color: #fff;
+    font-size: 2em;
+}
+
+.box1 li::before{
+    content: '';
+    padding-left: 0.5em;
+}
+
+/* footer screen */
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 40vh;
+    background: #111;
+    color: #d9d9d9;
+}
+
+.main-content{
+    display: flex;
+}
+
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content{
+    margin: 25px 0 0 0;
+}
+
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+
+.left .content p{
+    text-align: justify;
+}
+
+.left .content .social a{
+    padding: 0 2px;
+}
+
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    color: #d9d9d9;
+    background: #1a1a1a;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.4s all ease-out;
+}
+
+.left .content .social a span:hover{
+    background: #f12020;
+}
+
+.main-content .center .content div{
+    margin-top: 20px;
+} 
+
+
+
+
+/* responsive mobile media */
+@media only screen and (max-width: 940px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    .first{
+        width: 100%;
+        height: 50vh;
+        padding: auto;
+    }
+ 
+    .navbar{
+        width: 100%;
+        height: 50vh;
+        padding: 0;
+
+    }
+
+    .navbar-content{
+        margin-left: -6vw;
+    }
+
+    .upper h1{
+        font-size: 5vw;
+    }
+
+    .logo h1::first-letter{
+        font-size: 10vw;
+    }    
+    
+    nav .upper-content h1{
+        font-size: 10vw;
+    }    
+
+    nav .upper-content h3{
+        font-size: 7vw;
+        color: #fff;
+    }
+  
+
+    .dropdown{
+        position: absolute;
+        top: -100%;
+        left: -0.5px;
+        background: #007500;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.7s ease;
+        border-bottom-right-radius: 250px;
+        gap: 0;   
+        z-index: 2;     
+
+    }
+
+    .hamburger{
+        display: block;
+        z-index: 10;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .dropdown.active{
+        top: 0;
+    }
+
+    /* second page */
+
+    .main-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .main-heading h1{
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+
+    .second-2nd{      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .main-heading{
+        width: 100%;
+    }
+
+    .main-heading h1{
+        font-size: 1.6em;
+    }
+
+    .straight-line .line{
+        height: 11em;
+    }
+
+    /* third page */
+    .third{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: none;
+    }
+
+    .third img{
+        width: 100%;
+        height: auto;
+    }
+
+    .third .para-content{
+        width: 100vw;
+        height: auto;
+        background: linear-gradient(90deg, #fff 20%, #008000 80%);
+        border-top-right-radius: 10em;
+       
+    }
+
+    .para-content-title{
+        width: 100vw;
+        height: auto;
+    }
+
+    .para-content-title h1{
+        font-size: justify;
+        padding: 0.1em 2em;
+    }
+
+    .para-content-heading p{
+        width: 100vw;
+        height: auto;
+        font-size: justify;
+        padding: 0 1em;
+        margin-bottom: 2em;
+
+    }
+
+    .para-content-title::first-letter{
+        color: #008000;
+    }
+
+    /* fourth screen */
+    .fourth{
+        width: 100%;
+        height: 50%;
+        overflow-x: scroll;
+    }
+
+    .fourth .box1{
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+
+    .box1 li{
+        font-size: 1em;
+    }
+
+    /* footer screen */
+
+    footer .main-content{
+        width: auto;
+        height: auto;
+        background: #1a1a1a;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .main-content .box::before{
+        content: " ";
+        display: block;
+        height: 6px;
+        width: 60vw;
+        /* position: absolute; */
+        background: #008000;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        
+    }
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+}
+
+
+
+
