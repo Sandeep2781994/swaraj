@@ -92,8 +92,8 @@ html{
 @media only screen and (max-width: 940px) {
     .glass{
         overflow: scroll;
-        min-height: 80%;
-        min-width: 80%;
+        min-height: 90%;
+        min-width: 90%;
     }
 
     .glass h1{
@@ -103,7 +103,7 @@ html{
     }
 
     .glass p{
-        font-size: 1.7em;
+        font-size: 1.2em;
     }
 
     .button1{
