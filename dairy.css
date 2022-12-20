@@ -47,6 +47,7 @@ html{
     justify-content: center;
     align-items: center; */
     color: #fff;
+    text-align: justify;
 }
 
 .glass p::first-letter{
