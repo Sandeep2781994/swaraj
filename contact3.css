@@ -399,7 +399,7 @@ footer{
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .dropdown .active{
+    .dropdown.active{
         top: 0%;
     }
 
