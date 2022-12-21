@@ -367,7 +367,7 @@ footer{
 
     .dropdown{
         position: absolute;
-        top: -100%;
+        top: -110%;
         left: -0.5px;
         background: #007500;
         height: 100vh;
@@ -399,8 +399,8 @@ footer{
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .dropdown.active{
-        top: 0;
+    .dropdown .active{
+        top: 0%;
     }
 
     /* second page */
